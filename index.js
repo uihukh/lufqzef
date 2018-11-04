@@ -33,7 +33,7 @@ function kiusi(){
   const status = await page.open('http://www.adzbux.com/promote7.php?ref=biboucuongoc1102');
    
   
-  setTimeout(async () => await await instance.exit(); , 40000); 
+  setTimeout(async () => await await instance.exit() , 40000); 
   
 })();
 
