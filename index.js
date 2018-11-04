@@ -30,9 +30,14 @@ function kiusi(){
     console.info('Requesting', requestData.url);
   });
  
-  const status = await page.open('http://www.adzbux.com/promote7.php?ref=biboucuongoc1102');
-  const content = await page.property('content');
-  console.log(content);
+  // const status = await page.open('http://www.adzbux.com/promote7.php?ref=biboucuongoc1102');
+  browser.setProxy('186.208.231.28','34944','http', null, null, function(){
+        const status = await page.open('http://www.adzbux.com/promote7.php?ref=biboucuongoc1102');
+        const content = await page.property('content');
+        console.log(content);
+  });
+   
+
   
   setTimeout(async () => await await instance.exit() , 40000); 
   
