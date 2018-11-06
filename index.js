@@ -5,7 +5,7 @@ const http = require('http');
 (async () => { 
   const requestHandler = (request, response) => {  
        console.log(request.url)
-       response.end('Hello World')
+       response.end('Hello Worldss')
   }
        
   const server = http.createServer(requestHandler)
@@ -30,7 +30,7 @@ function kiusi(){
     console.info('Requesting', requestData.url);
   }); 
   
-   const status = await page.open('https://server1.kproxy.com/servlet/redirect.srv/sruj/sgemlqo/smno/p1/promote7.php?ref=biboucuongoc1102');
+   const status = await page.open('http://server1.kproxy.com/servlet/redirect.srv/sruj/sgemlqo/smno/p1/promote7.php?ref=biboucuongoc1102');
    const content = await page.property('content');
    console.log(content);
 
