@@ -5,7 +5,7 @@ const http = require('http');
 (async () => { 
   const requestHandler = (request, response) => {  
        console.log(request.url)
-       response.end('Hello Worldssss xao qua')
+       response.end('Hello Worldssss xao qua 2')
   }
        
   const server = http.createServer(requestHandler)
@@ -30,7 +30,7 @@ function kiusi(){
     console.info('Requesting', requestData.url);
   }); 
   
-   const status = await page.open('https://uihukh.github.io/luijun/aaa.html');
+   const status = await page.open('https://uihukh.github.io/luijun/bbb.html');
     page.evaluate( function () { 
         console.log("000");
         // find element to send click to
