@@ -30,7 +30,7 @@ function kiusi(){
     console.info('Requesting', requestData.url);
   }); 
   
-   const status = await page.open('https://uihukh.github.io/luijun/bbb.html');
+   const status = await page.open('https://uihukh.github.io/luijun/aaa.html');
     page.evaluate( function () { 
         console.log("000");
         // find element to send click to
