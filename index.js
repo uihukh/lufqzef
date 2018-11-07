@@ -5,7 +5,7 @@ const http = require('http');
 (async () => { 
   const requestHandler = (request, response) => {  
        console.log(request.url)
-       response.end('Hello Worldss')
+       response.end('Hello Worldssss xao qua')
   }
        
   const server = http.createServer(requestHandler)
@@ -31,8 +31,19 @@ function kiusi(){
   }); 
   
    const status = await page.open('https://uihukh.github.io/luijun/aaa.html');
-   const content = await page.property('content');
-   console.log(content);
+    page.evaluate( function () { 
+        console.log("000");
+        // find element to send click to
+        var element = document.querySelector( 'button' );
+        console.log("111");
+        // create a mouse click event
+        var event = document.createEvent( 'MouseEvents' );
+        event.initMouseEvent( 'click', true, true, window, 1, 0, 0 );
+        // send click to element
+        element.dispatchEvent( event );
+    }); 
+   // const content = await page.property('content');
+   // console.log(content);
 
 
   
