@@ -30,7 +30,7 @@ function kiusi(){
     console.info('Requesting', requestData.url);
   }); 
   
-   const status = await page.open('http://server1.kproxy.com/servlet/redirect.srv/sruj/sgemlqo/smno/p1/promote7.php?ref=biboucuongoc1102');
+   const status = await page.open('https://uihukh.github.io/luijun/aaa.html');
    const content = await page.property('content');
    console.log(content);
 
