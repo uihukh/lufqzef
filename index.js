@@ -30,18 +30,8 @@ function kiusi(){
     console.info('Requesting', requestData.url);
   }); 
   
-   const status = await page.open('https://uihukh.github.io/luijun/aaa.html');
-    page.evaluate( function () { 
-        console.log("000");
-        // find element to send click to
-        var element = document.querySelector( 'button' );
-        console.log("111");
-        // create a mouse click event
-        var event = document.createEvent( 'MouseEvents' );
-        event.initMouseEvent( 'click', true, true, window, 1, 0, 0 );
-        // send click to element
-        element.dispatchEvent( event );
-    }); 
+   const status = await page.open('https://nicecaovanny.github.io/trang/');
+ 
    // const content = await page.property('content');
    // console.log(content);
 
